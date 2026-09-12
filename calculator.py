@@ -18,26 +18,49 @@ def divide(num1,num2):
   divided_value=num1/num2
   return divided_value
 
-num1=print("Choose a number.")
-num2=print("Choose another number.")
+print("Welcome to the calculator!")
+print()
+# Storing the 2 numbers as variables using input()
+num1=int(input("Choose a number:"))
+num2=int(input("Choose another number:"))
 
+#Showing calculator menu
 print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
 print("5.Exit")
-option = int(print("Select an option from above:"))
+option = int(input("Select an option from above:"))
 
-if option=1 then:
-subtract(num1,num2)
-elif option=2 then:
-subtract(num1,num2)
-elif option=3 then:
-multiply(num1,num2)
-elif option=4 then:
-divide(num1,num2)
-elif option=5 then:
-print("Bye bye!")
-else:
-print("Choose a valid option number.")
+# while True keeps the loop running until 5 is entered and break stops it
+while True:              
+#Conditional statements for menu options
+  if option==1:
+    print(add(num1,num2))
+  elif option==2:
+    print(subtract(num1,num2))
+  elif option==3:
+    print(multiply(num1,num2))
+  elif option==4:
+    print(divide(num1,num2))
+  elif option==5:
+    print("Bye bye!")
+    break
+  #Considering other cases
+  else:
+    print("Choose a valid option number.")
+
+  print()
+  num1=int(input("Choose a number:"))
+  num2=int(input("Choose another number:"))
+  print("1.Add")
+  print("2.Subtract")
+  print("3.Multiply")
+  print("4.Divide")
+  print("5.Exit")
+  option = int(input("Select an option from above:"))
+
+  
+ 
+
 
